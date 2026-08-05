@@ -1,7 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://brands.home-assistant.io/bedjet/dark_logo.png">
-  <img alt="bedjet logo" src="https://brands.home-assistant.io/bedjet/logo.png">
-</picture>
+![bedjet logo](https://brands.home-assistant.io/bedjet/logo.png)
 
 # BedJet for Home Assistant
 
@@ -17,20 +14,20 @@ This project provides various entities to allow control of a [BedJet V2 or BedJe
 >
 > Before proceeding, **make sure the BedJet app is fully closed**. If you need to use the app (for example, to adjust biorhythm programs), temporarily disable the Home Assistant integration.
 
-<!-- BEGIN AUTO-GENERATED INSTALLATION -->
-
 ## ⬇️ Installation
 
-### HACS (Recommended)
+### HACS (custom repository)
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=natekspencer&repository=ha-bedjet&category=integration)
+[![Add Repository to HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Melhiser-Olson-Home&repository=ha-bedjet-enhanced&category=integration)
 
-This integration is available in the default [HACS](https://hacs.xyz/) repository.
+This is a fork, so it isn't in the default HACS store. Add it as a custom repository instead:
 
-1. Use the **My Home Assistant** badge above, or from within Home Assistant, click on **HACS**
-2. Search for `BedJet` and click on the appropriate repository
-3. Click **DOWNLOAD**
+1. Use the **My Home Assistant** badge above, or from within Home Assistant: HACS → the three-dot menu (top right) → **Custom repositories**
+2. Add `https://github.com/Melhiser-Olson-Home/ha-bedjet-enhanced`, category **Integration**
+3. Search for `BedJet` in HACS and click **DOWNLOAD**
 4. Restart Home Assistant
+
+> ⚠️ If you already have the original [natekspencer/ha-bedjet](https://github.com/natekspencer/ha-bedjet) installed via HACS, remove it first — both use the `bedjet` domain and can't be installed side by side.
 
 ### Manual
 
@@ -57,7 +54,6 @@ Alternatively:
 2. In the bottom-right corner, select **Add integration**
 3. Type `BedJet` and select the **BedJet** integration
 4. Follow the instructions to add the integration to your Home Assistant
-<!-- END AUTO-GENERATED INSTALLATION -->
 
 ## Screenshot
 
